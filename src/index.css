@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@theme {
+  --color-primary: #1769AA;
+  --color-primary-dark: #0F4C81;
+  --color-secondary: #16A6A0;
+  --color-bg: #F5F8FC;
+  --color-surface: #FFFFFF;
+  --color-ink: #1E293B;
+  --color-muted: #64748B;
+  --color-accent: #FFB547;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+body { background: var(--color-bg); color: var(--color-ink); font-family: var(--font-sans); }
+@utility btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition active:scale-95; }
+@utility btn-primary { @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition active:scale-95 bg-primary text-white hover:bg-primary-dark; }
+@utility btn-ghost { @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition active:scale-95 border border-white/60 text-white hover:bg-white/10; }
+@utility card { @apply rounded-2xl bg-surface shadow-sm ring-1 ring-slate-100; }
